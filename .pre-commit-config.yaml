@@ -20,6 +20,7 @@ repos:
     rev: v0.0.252
     hooks:
       - id: ruff
+        args: [ --fix ]
 
   - repo: https://github.com/abravalheri/validate-pyproject
     rev: v0.12.1
@@ -30,6 +31,7 @@ repos:
     rev: 23.1.0
     hooks:
       - id: black
+        args: [--config=./pyproject.toml]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.0.1
